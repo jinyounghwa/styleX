@@ -1,9 +1,10 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+// Code generated with stylex. Do not modify!
+
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
 
       </div>
     )

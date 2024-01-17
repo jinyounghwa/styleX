@@ -1,21 +1,30 @@
+import React from "react";
 import stylex from "@stylexjs/stylex";
 import "./globals.css";
+import testpage from "./test";
+
+import test from "./test";
+declare module 'react' {
+  interface JSXIntrinsicElements {
+    about: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+  }
+}
 
 const DARK_MODE = "@media (prefers-color-scheme: dark)";
 
-const s = stylex.create({
-  body: {
-    fontFamily: "sans-serif",
-    backgroundColor: {
-      default: "white",
-      [DARK_MODE]: "black",
-    },
-    color: {
-      default: "black",
-      [DARK_MODE]: "white",
-    },
-  },
-});
+// const s = stylex.create({
+//   body: {
+//     fontFamily: "sans-serif",
+//     backgroundColor: {
+//       default: "white",
+//       [DARK_MODE]: "black",
+//     },
+//     color: {
+//       default: "black",
+//       [DARK_MODE]: "white",
+//     },
+//   },
+// });
 
 export const metadata = {
   title: "Create Next App",
@@ -25,11 +34,12 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body {...stylex.props(s.body)}>{children}</body>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
+

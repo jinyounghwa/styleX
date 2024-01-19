@@ -17,6 +17,7 @@
     "@stylexjs/stylex": "^0.2.0-beta.27",
     "@types/mdx": "^2.0.10",
     "bright": "^0.8.4",
+    "bun": "^1.0.23",
     "next": "14.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"

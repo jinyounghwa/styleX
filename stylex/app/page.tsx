@@ -11,14 +11,6 @@ const s = stylex.create({
   },
 });
 
-// export default function Home() {
-//   return (
-//     <main className={stylex(s.main)}>
-//       <h1>Hello</h1>
-//     </main>
-//   );
-// }
-
 export default function Page() {
   return (
     <DashboardLayout>

@@ -1,6 +1,7 @@
 import stylex from "@stylexjs/stylex";
 import React from "react";
 import DashboardLayout from "./dashboard/layout";
+import TableLayout from "./table/layout";
 const s = stylex.create({
   main: {
     display: "flex",
@@ -14,9 +15,13 @@ const s = stylex.create({
 export default function Page() {
   return (
     <DashboardLayout>
+      <TableLayout>
       <main className={stylex(s.main)}>
-        <h1>Hello</h1>
+          <div>
+            <p>Footer</p>
+        </div>
       </main>
+      </TableLayout>
     </DashboardLayout>
   )
 }

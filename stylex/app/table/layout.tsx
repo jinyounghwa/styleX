@@ -2,8 +2,9 @@ import stylex from "@stylexjs/stylex";
 
 const tableStyle = stylex.create({
     table: {
-        borderCollapse: "collapse",
-        width: "100%",
+        posithion: "absolute",
+        marginTop: 50,
+        
     },
     th: {
         border: "1px solid #dddddd",
@@ -19,7 +20,7 @@ const tableStyle = stylex.create({
 
 
 
-export default function Layout({
+export default function layout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode
@@ -27,7 +28,7 @@ export default function Layout({
   return (
     <main>
       <section>
-        <table>
+        <table className={ stylex(tableStyle.table)}>
           <thead>
             <tr>
               <th>id</th>

@@ -7,10 +7,10 @@ const header = stylex.create({
     padding: 10 | 10 | 10 | 10,
     justifyContent: "space-between",
     backgroundColor: "white",
-    position: "fixed",
     width: "100%",
     height: 50,
     boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+    position:"relative",
   },
   textstyle: {
     display: "inline-flex",

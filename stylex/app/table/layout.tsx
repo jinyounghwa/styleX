@@ -1,23 +1,27 @@
 import stylex from "@stylexjs/stylex";
 
 const tableStyle = stylex.create({
-    table: {
+  table: {
+        disPlay: "flex",
         posithion: "absolute",
-        marginTop: 50,
-        
-    },
-    th: {
-        border: "1px solid #dddddd",
-        textAlign: "left",
-        padding: 8,
-    },
-    td: {
-        border: "1px solid #dddddd",
-        textAlign: "left",
-        padding: 8,
+        marginTop: 10,
+        marginLeft: 100,        
+        width: 1000,
     },
 });
-
+const buttonStyle = stylex.create({
+    button: {
+        position: "relative",
+        marginTop: 10,
+        marginLeft: 990,
+        width: 110,
+        height: 30,
+        backgroundColor: "#000000",
+        color: "#ffffff",
+        fontSize: 15,
+        fontWeight: "bold",
+    },
+});
 
 
 export default function layout({
@@ -27,6 +31,9 @@ export default function layout({
 }) {
   return (
     <main>
+      <div>
+        <button className={stylex(buttonStyle.button) }>글 작성하기</button>
+      </div>
       <section>
         <table className={ stylex(tableStyle.table)}>
           <thead>

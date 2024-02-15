@@ -1,9 +1,7 @@
 import React from "react";
 import stylex from "@stylexjs/stylex";
 import "./globals.css";
-import testpage from "./test";
 
-import test from "./test";
 declare module 'react' {
   interface JSXIntrinsicElements {
     about: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
